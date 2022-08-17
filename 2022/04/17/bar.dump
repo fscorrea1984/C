@@ -1,0 +1,17 @@
+0000000000401116 <func>:
+  401116:       55                      push   %rbp
+  401117:       48 89 e5                mov    %rsp,%rbp
+  40111a:       48 83 ec 10             sub    $0x10,%rsp
+  40111e:       89 7d fc                mov    %edi,-0x4(%rbp)
+  401121:       8b 45 fc                mov    -0x4(%rbp),%eax
+  401124:       66 0f 6e c0             movd   %eax,%xmm0
+  401128:       66 0f ef c9             pxor   %xmm1,%xmm1
+  40112c:       f3 0f 5a c8             cvtss2sd %xmm0,%xmm1
+  401130:       66 48 0f 7e c8          movq   %xmm1,%rax
+  401135:       66 48 0f 6e c0          movq   %rax,%xmm0
+  40113a:       bf 04 20 40 00          mov    $0x402004,%edi
+  40113f:       b8 01 00 00 00          mov    $0x1,%eax
+  401144:       e8 e7 fe ff ff          call   401030 <printf@plt>
+  401149:       90                      nop
+  40114a:       c9                      leave
+  40114b:       c3                      ret

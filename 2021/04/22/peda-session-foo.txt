@@ -1,0 +1,7 @@
+break /home/fscorrea/C/2021/04/22/foo.c:16
+disable $bpnum
+watch i
+disable $bpnum
+break /home/fscorrea/C/2021/04/22/foo.c:19
+break /home/fscorrea/C/2021/04/22/foo.c:22
+

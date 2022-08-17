@@ -1,0 +1,77 @@
+   lynx-dev
+
+   [Top][All Lists]
+
+                                                                       ______________________________ Search Advanced
+     _________________________________________________________________________________________________________________________________________________________________________________
+
+   [Date Prev][Date Next][Thread Prev][Thread Next][Date Index][Thread Index]
+
+Re: [Lynx-dev] Disable cookies permanently
+     _________________________________________________________________________________________________________________________________________________________________________________
+
+         From: Larry Hynes
+      Subject: Re: [Lynx-dev] Disable cookies permanently
+         Date: Tue, 26 Dec 2017 21:07:06 +0000
+   User-agent: mblaze/0.2-59-gbb06448 (2017-12-06)
+     _________________________________________________________________________________________________________________________________________________________________________________
+
+address@hidden wrote:
+> I wondered if it was possible to disable cookies completly and
+> permanently. I only can find options to auto-accept cookies or options
+> to white-/blacklist cookies for certain domains. Even if I configure
+> lynx to ask me what to do with cookies of a certain site and I choose
+> "Never" as answer to the "Allow?"-question, lynx asks me again, once I
+> run a new lynx session. Maybe I did not search enough or proper or I
+> don't understand the used terms ...
+
+Can you find your lynx.cfg file? (Mine is at ~/.lynx/lynx.cfg, and
+is exported to my environment as LYNX_CFG=~/.lynx/lynx.cfg
+in my shell's ~/.profile.)
+
+An excerpt from that file, which is very well commented:
+
+-----------------------------------------------------------------------
+
+h1 Cookies
+
+h2 SET_COOKIES
+# If SET_COOKIES is set FALSE, Lynx will ignore Set-Cookie headers
+# in http server replies.  Note that if a COOKIE_FILE is in use (see
+# below) that contains cookies at startup, Lynx will still send those
+# persistent cookies in requests as appropriate.  Setting SET_COOKIES
+# to FALSE just prevents accepting any new cookies from servers.  To
+# prevent all cookie processing (sending *and* receiving) in a session,
+# make sure that PERSISTENT_COOKIES is not TRUE or that COOKIE_FILE does
+# not point to a file with cookies, in addition to setting SET_COOKIES
+# to FALSE.
+# The default is defined in userdefs.h, and can be overridden here,
+# and/or toggled via the -cookies command line switch.
+#
+SET_COOKIES:FALSE
+
+-----------------------------------------------------------------------
+
+This should be enough to set you on the path you want.
+
+
+     _________________________________________________________________________________________________________________________________________________________________________________
+
+                                                                                     reply via email to
+                                                                                        Larry Hynes
+     _________________________________________________________________________________________________________________________________________________________________________________
+
+   [Prev in Thread] Current Thread [Next in Thread]
+
+     * [Lynx-dev] Disable cookies permanently, kaltheat, 2017/12/26
+          + Re: [Lynx-dev] Disable cookies permanently, Larry Hynes <=
+               o Re: [Lynx-dev] Disable cookies permanently, kaltheat, 2017/12/26
+     _________________________________________________________________________________________________________________________________________________________________________________
+
+     * Prev by Date: [Lynx-dev] Disable cookies permanently
+     * Next by Date: Re: [Lynx-dev] Disable cookies permanently
+     * Previous by thread: [Lynx-dev] Disable cookies permanently
+     * Next by thread: Re: [Lynx-dev] Disable cookies permanently
+     * Index(es):
+          + Date
+          + Thread

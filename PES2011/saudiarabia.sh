@@ -1,0 +1,26 @@
+#!/bin/bash
+
+sed -i \
+-e "s/WAZERNA AN/ABDULLAH ALI/" \
+-e "s/OSLO HAMET/HAWSAWI/" \
+-e "s/A.MEJIYAMYURI/AL MONTASHARI/" \
+-e "s/SIAZOIL/SUHAIL/" \
+-e "s/ADLA GHAILI/ABDUALGHANI/" \
+-e "s/AGI ZEIRAM/AL ZORI/" \
+-e "s/SOMARI/ALI KHARIRI/" \
+-e "s/AN JILAN/AL JASSIM/" \
+-e "s/NURUMI/NOOR/" \
+-e "s/ADOSHELTAN/AL SHAMRANI/" \
+-e "s/AGI PAKARANI/AL QAHTANI/" \
+-e "s/AGI LQE/AL NAJE/" \
+-e "s/ZAGA/ZAID/" \
+-e "s/TARLAR/TUKAR/" \
+-e "s/AGI SIBY/AL QADI/" \
+-e "s/ADOROSSA/AL DOSSARI/" \
+-e "s/ALINOHADEER/ABUSHGEER/" \
+-e "s/ADALOF/OTAIF/" \
+-e "s/ALGLORB/AL SHALHOUB/" \
+-e "s/AUSAD AF/OTAIF/" \
+-e "s/HAGAM/HAZAZI/" \
+-e "s/MAK AHSAI/MOUATH/" \
+-e "s/BICSTRAN/BASHIR/" ~/saudiarabia.csv

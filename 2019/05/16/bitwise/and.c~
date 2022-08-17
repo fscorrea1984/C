@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+ int main (int argc, char **argv) {
+
+   unsigned char c = '\xD8';
+   unsigned char m = '\x7F';
+   
+   unsigned char x = c&m;
+
+   printf("0x%x\n", x);
+   
+   return 0;
+
+ }
+
+/*
+
+1101 1000 = 0xD8
+0111 1111 = 0x7f
+----------------
+0101 1000 = 0x58
+
+ */

@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+int main(int argc, char **argv) {
+
+  /* input */
+  
+  FILE *fd1; // input A.txt
+  FILE *fd2; // input B.txt
+  FILE *fd3; // output C.txt
+  
+  return 0;
+
+}

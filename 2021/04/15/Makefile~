@@ -1,0 +1,5 @@
+all:
+	gcc -g -std=c11 chroot.c -o foo
+clean:
+	rm -rf *~ foo
+	clear

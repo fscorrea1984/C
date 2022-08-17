@@ -1,0 +1,336 @@
+   #GeeksforGeeks » Feed GeeksforGeeks » Comments Feed alternate alternate
+
+     * Tutorials
+          + Algorithms
+               o Analysis of Algorithms
+                    # Asymptotic Analysis
+                    # Worst, Average and Best Cases
+                    # Asymptotic Notations
+                    # Little o and little omega notations
+                    # Lower and Upper Bound Theory
+                    # Analysis of Loops
+                    # Solving Recurrences
+                    # Amortized Analysis
+                    # What does 'Space Complexity' mean ?
+                    # Pseudo-polynomial Algorithms
+                    # Polynomial Time Approximation Scheme
+                    # A Time Complexity Question
+               o Searching Algorithms
+               o Sorting Algorithms
+               o Graph Algorithms
+               o Pattern Searching
+               o Geometric Algorithms
+               o Mathematical
+               o Randomized Algorithms
+               o Greedy Algorithms
+               o Dynamic Programming
+               o Divide and Conquer
+               o Backtracking
+               o Branch and Bound
+               o All Algorithms
+          + Data Structures
+               o Arrays
+               o Linked List
+               o Stack
+               o Queue
+               o Binary Tree
+               o Binary Search Tree
+               o Heap
+               o Hashing
+               o Graph
+               o Advanced Data Structure
+               o Matrix
+               o Strings
+               o All Data Structures
+          + Languages
+               o C
+               o C++
+               o Java
+               o Python
+               o C#
+               o Javascript
+               o jQuery
+               o SQL
+               o PHP
+               o Scala
+               o Perl
+               o Go Language
+               o HTML
+               o CSS
+               o Kotlin
+          + Interview Corner
+               o Company Preparation
+               o Top Topics
+               o Practice Company Questions
+               o Interview Experiences
+               o Experienced Interviews
+               o Internship Interviews
+               o Competititve Programming
+               o Design Patterns
+               o Multiple Choice Quizzes
+          + GATE
+               o GATE CS Notes 2021
+               o Last Minute Notes
+               o GATE CS Solved Papers
+               o GATE CS Original Papers and Official Keys
+               o GATE 2021 Dates
+               o GATE CS 2021 Syllabus
+               o Important Topics for GATE CS
+               o Sudo GATE 2021
+          + ISRO CS
+               o ISRO CS Solved Papers
+               o ISRO CS Original Papers and Official Keys
+               o ISRO CS Syllabus for Scientist/Engineer Exam
+          + UGC NET CS
+               o UGC NET CS Notes Paper II
+               o UGC NET CS Notes Paper III
+               o UGC NET CS Solved Papers
+          + CS Subjects
+               o Mathematics
+               o Operating System
+               o DBMS
+               o Computer Networks
+               o Computer Organization and Architecture
+               o Theory of Computation
+               o Compiler Design
+               o Digital Logic
+               o Software Engineering
+          + Web Technologies
+               o HTML
+               o CSS
+               o Javascript
+               o jQuery
+               o PHP
+     * Student
+          + Campus Ambassador Program
+          + Project
+          + Geek of the Month
+          + Campus Geek of the Month
+          + Placement Course
+          + Competititve Programming
+          + Testimonials
+          + Geek on the Top
+          + Careers
+          + Internship
+     * Jobs
+          + Apply for Jobs
+          + Post a Job
+     * Courses
+
+     * ____________________
+     *
+
+     * Home
+     * Courses
+     *
+     * GBlog
+     * Puzzles
+     * What's New ?
+
+   Related Articles
+
+   (BUTTON) ▲
+
+Related Articles
+
+     * Compiler Theory | Set 1
+     * Difference between High Level and Low level languages
+     * Phases of a Compiler
+     * Three address code in Compiler
+     * Ambiguous Grammar
+     * Symbol Table in Compiler
+     * Introduction of Lexical Analysis
+     * Introduction of Compiler Design
+     * Construction of LL(1) Parsing Table
+     * SLR, CLR and LALR Parsers | Set 3
+     * Compiler Theory | Set 2
+     * Language Processors: Assembler, Compiler and Interpreter
+     * Static and Dynamic Scoping
+     * Flex (Fast Lexical Analyzer Generator )
+     * Code Optimization in Compiler Design
+     * C program to detect tokens in a C program
+     * Recursive Descent Parser
+     * Intermediate Code Generation in Compiler Design
+     * FOLLOW Set in Syntax Analysis
+     * Syntax Directed Translation in Compiler Design
+     * Program to calculate First and Follow sets of given grammar
+     * Shift Reduce Parser in Compiler
+     * Bottom Up or Shift Reduce Parsers | Set 2
+     * Operator grammar and precedence parser in TOC
+     * Introduction of Assembler
+     * S - attributed and L - attributed SDTs in Syntax directed translation
+     * Generation of Programming Languages
+     * Introduction to YACC
+     * Parsing | Set 1 (Introduction, Ambiguity and Parsers)
+     * Why FIRST and FOLLOW in Compiler Design?
+
+   Difference between Compiler and Assembler
+     * Difficulty Level : Easy
+     * Last Updated : 26 Aug, 2019
+
+   Prerequisite – Language Processors: Assembler, Compiler and Interpreter
+
+   Compiler:
+   A Compiler is primarily used for programs that translate source code from a high-level programming language to a machine level language to create an executable program. A compiler
+   will consider the entire program as a whole code and then translates. The main job of the compiler is that it checks all kinds of limits, ranges, errors, etc. Before the compiler can
+   successfully execute the code, the errors must be removed from the source code. Example of compiled languages is C, C++, Java, C#, etc.
+
+   [compiler.png]
+
+   Assembler:
+   The Assembler takes as input the assembly code and translates it into relocatable machine code. Assembler checks each instruction for its correctness and generates a diagnostic
+   message, if
+
+   [assem.png]
+
+   Difference between Compiler and Assembler:
+
+   Compiler Assembler
+   Compiler converts the source code written by the programmer to a machine level language. Assembler converts the assembly code into the machine code.
+   Compiler input source code. Assembler input assembly language code.
+   It converts the whole code into machine language at a time. But the Assembler can’t do this at once.
+   A Compiler is more intelligent than an Assembler. But, an Assembler is less intelligent than a Compiler.
+   The compilation phases are lexical analyzer, syntax analyzer, semantic analyzer, intermediate code generated, a code optimizer, code generator, and error handler Assembler makes two
+   phases over the given input, first phase and the second phase.
+   The output of compiler is a mnemonic version of machine code. The output of assembler is binary code.
+   C, C++, Java, and C# are examples of compiled languages. GAS, GNU is an example of an assembler.
+
+   Attention reader! Don’t stop learning now. Get hold of all the important CS Theory concepts for SDE interviews with the CS Theory Course at a student-friendly price and become
+   industry ready.
+   My Personal Notes arrow_drop_up
+
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   (BUTTON) Save
+   Recommended Articles
+   Page :
+   Difference between Cross-Assembler and Compiler
+   22, May 20
+   Language Processors: Assembler, Compiler and Interpreter
+   09, Aug 18
+   Difference between Assembler and Interpreter
+   28, Jul 20
+   Difference between Native compiler and Cross compiler
+   29, Apr 20
+   Introduction of Assembler
+   27, Mar 19
+   Incremental Compiler in Compiler Design
+   22, Aug 20
+   Difference between Compiler and Interpreter
+   12, Apr 20
+   Why FIRST and FOLLOW in Compiler Design?
+   23, Sep 15
+   Error detection and Recovery in Compiler
+   24, Apr 18
+   Compiler Theory | Set 1
+   04, Oct 09
+   Compiler Theory | Set 2
+   02, Jan 10
+   Introduction to Syntax Analysis in Compiler Design
+   22, Sep 15
+   Runtime Environments in Compiler Design
+   13, Jan 17
+   Syntax Directed Translation in Compiler Design
+   05, Jan 17
+   Intermediate Code Generation in Compiler Design
+   20, Jan 17
+   Peephole Optimization in Compiler Design
+   30, Apr 19
+   Code Optimization in Compiler Design
+   26, Sep 17
+   Introduction of Object Code in Compiler Design
+   14, Oct 17
+   Introduction of Compiler Design
+   15, Nov 17
+   Phases of a Compiler
+   15, Nov 17
+   Compiler Design | Syntax Directed Definition
+   20, Apr 18
+   Symbol Table in Compiler
+   24, Apr 18
+   Error Handling in Compiler Design
+   30, Apr 18
+   Three address code in Compiler
+   21, May 18
+   (BUTTON) favorite_border Like
+   first_page Previous
+   Neo4j Create Constraint
+   Next last_page
+   Finite Group in Algebraic Structure
+   Article Contributed By :
+   https://media.geeksforgeeks.org/auth/avatar.png
+   sanjoy_62
+   @sanjoy_62
+   Vote for difficulty
+   Current difficulty : Easy
+   (BUTTON) Easy (BUTTON) Normal (BUTTON) Medium (BUTTON) Hard (BUTTON) Expert
+   Article Tags :
+     * Compiler Design
+     * Difference Between
+     * GATE CS
+
+   Report Issue
+
+   What’s New
+   Data structures and algorithms - self placed
+   Data Structures and Algorithms – Self Paced Course
+   View Details
+
+   Ad-Free Experience - GeeksforGeeks Premium
+   Ad-Free Experience – GeeksforGeeks Premium
+   View Details
+
+   Most popular in Compiler Design
+     * Single pass, Two pass, and Multi pass Compilers
+     * Runtime Environments in Compiler Design
+     * C++ Program to implement Symbol Table
+     * Difference between GCC and G++
+     * Issues in the design of a code generator
+
+   Most visited in Difference Between
+     * Difference between == and .equals() method in Java
+     * Difference between BFS and DFS
+     * class method vs static method in Python
+     * Web 1.0, Web 2.0 and Web 3.0 with their difference
+     * Differences between JDK, JRE and JVM
+
+   Writing code in comment? Please use ide.geeksforgeeks.org, generate link and share the link here.
+   (BUTTON) Load Comments
+
+   GeeksforGeeks
+   5th Floor, A-118,
+   Sector-136, Noida, Uttar Pradesh - 201305
+   feedback@geeksforgeeks.org
+     * Company
+     * About Us
+     * Careers
+     * Privacy Policy
+     * Contact Us
+
+     * Learn
+     * Algorithms
+     * Data Structures
+     * Languages
+     * CS Subjects
+     * Video Tutorials
+
+     * Practice
+     * Courses
+     * Company-wise
+     * Topic-wise
+     * How to begin?
+
+     * Contribute
+     * Write an Article
+     * Write Interview Experience
+     * Internships
+     * Videos
+
+   @geeksforgeeks , Some rights reserved
+
+   We use cookies to ensure you have the best browsing experience on our website. By using our site, you acknowledge that you have read and understood our Cookie Policy & Privacy Policy
+   (BUTTON) Got It !
+
+   Lightbox

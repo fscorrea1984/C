@@ -1,0 +1,201 @@
+(gdb) 
+
+(gdb) Temporary breakpoint 1 at 0x749: file foo.c, line 5.
+Starting program: /home/fscorrea/C/foo 16
+
+Temporary breakpoint 1, main (argc=2, argv=0x7fffffffdcc8) at foo.c:5
+5	int main(int argc, char **argv) {
+7	  unsigned long n = strtoul(argv[1],NULL,10), i = 0, j, c, sign;
+1: n = 93824992233725
+2: i = 140737351932320
+3: j = 0
+4: c = 93824992233008
+5: sign = 93824992233648
+8	  char s[] = "";
+1: n = 16
+2: i = 0
+3: j = 0
+4: c = 93824992233008
+5: sign = 93824992233648
+10	  if((sign = n) < 0)
+1: n = 16
+2: i = 0
+3: j = 0
+4: c = 93824992233008
+5: sign = 93824992233648
+6: s = ""
+7: sizeof(s) = 1
+14	    s[i++] = (char)n % 10 + '0';
+1: n = 16
+2: i = 0
+3: j = 0
+4: c = 93824992233008
+5: sign = 16
+6: s = ""
+7: sizeof(s) = 1
+15	  } while((n /= 10) > 0);
+1: n = 16
+2: i = 1
+3: j = 0
+4: c = 93824992233008
+5: sign = 16
+6: s = "6"
+7: sizeof(s) = 1
+14	    s[i++] = (char)n % 10 + '0';
+1: n = 1
+2: i = 1
+3: j = 0
+4: c = 93824992233008
+5: sign = 16
+6: s = "6"
+7: sizeof(s) = 1
+15	  } while((n /= 10) > 0);
+1: n = 1
+2: i = 2
+3: j = 0
+4: c = 93824992233008
+5: sign = 16
+6: s = "6"
+7: sizeof(s) = 1
+19	  s[i] = '\0';
+1: n = 0
+2: i = 2
+3: j = 0
+4: c = 93824992233008
+5: sign = 16
+6: s = "6"
+7: sizeof(s) = 1
+21	  j = strlen(s);
+1: n = 0
+2: i = 2
+3: j = 0
+4: c = 93824992233008
+5: sign = 16
+6: s = "6"
+7: sizeof(s) = 1
+8: s[0] = 54 '6'
+9: s[1] = 49 '1'
+10: s[2] = 0 '\000'
+22	  for(i = 0, j = strlen(s)-1; i < j; i++, j--) {
+1: n = 0
+2: i = 2
+3: j = 2
+4: c = 93824992233008
+5: sign = 16
+6: s = "6"
+7: sizeof(s) = 1
+8: s[0] = 54 '6'
+9: s[1] = 49 '1'
+10: s[2] = 0 '\000'
+23	    c = s[i];
+1: n = 0
+2: i = 0
+3: j = 1
+4: c = 93824992233008
+5: sign = 16
+6: s = "6"
+7: sizeof(s) = 1
+8: s[0] = 54 '6'
+9: s[1] = 49 '1'
+10: s[2] = 0 '\000'
+24	    s[i] = s[j];
+1: n = 0
+2: i = 0
+3: j = 1
+4: c = 54
+5: sign = 16
+6: s = "6"
+7: sizeof(s) = 1
+8: s[0] = 54 '6'
+9: s[1] = 49 '1'
+10: s[2] = 0 '\000'
+Auto-display expressions now in effect:
+Num Enb Expression
+1:   y  n
+2:   y  i
+3:   y  j
+4:   y  c
+5:   y  sign
+6:   y  s
+7:   y  sizeof(s)
+8:   y  s[0]
+9:   y  s[1]
+10:   y  s[2]
+25	    s[j] = (char)c;
+1: n = 0
+2: i = 0
+3: j = 1
+4: c = 54
+5: sign = 16
+6: s = "1"
+7: sizeof(s) = 1
+8: s[0] = 49 '1'
+9: s[1] = 49 '1'
+10: s[2] = 0 '\000'
+22	  for(i = 0, j = strlen(s)-1; i < j; i++, j--) {
+1: n = 0
+2: i = 0
+3: j = 1
+4: c = 54
+5: sign = 16
+6: s = "1"
+7: sizeof(s) = 1
+8: s[0] = 49 '1'
+9: s[1] = 54 '6'
+10: s[2] = 0 '\000'
+11: s[0] = 49 '1'
+12: s[1] = 54 '6'
+13: s[2] = 0 '\000'
+28	  puts(s);
+1: n = 0
+2: i = 1
+3: j = 0
+4: c = 54
+5: sign = 16
+6: s = "1"
+7: sizeof(s) = 1
+8: s[0] = 49 '1'
+9: s[1] = 54 '6'
+10: s[2] = 0 '\000'
+11: s[0] = 49 '1'
+12: s[1] = 54 '6'
+13: s[2] = 0 '\000'
+30	  return 0;
+1: n = 0
+2: i = 1
+3: j = 0
+4: c = 54
+5: sign = 16
+6: s = "1"
+7: sizeof(s) = 1
+8: s[0] = 49 '1'
+9: s[1] = 54 '6'
+10: s[2] = 0 '\000'
+11: s[0] = 49 '1'
+12: s[1] = 54 '6'
+13: s[2] = 0 '\000'
+32	}
+1: n = 0
+2: i = 1
+3: j = 0
+4: c = 54
+5: sign = 16
+6: s = "1"
+7: sizeof(s) = 1
+8: s[0] = 49 '1'
+9: s[1] = 54 '6'
+10: s[2] = 0 '\000'
+11: s[0] = 49 '1'
+12: s[1] = 54 '6'
+13: s[2] = 0 '\000'
+
+Program received signal SIGABRT, Aborted.
+__GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+51	../sysdeps/unix/sysv/linux/raise.c: No such file or directory.
+
+Program terminated with signal SIGABRT, Aborted.
+The program no longer exists.
+The program is not being run.
+The program is not being run.
+The program is not being run.
+The program is not being run.

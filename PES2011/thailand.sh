@@ -1,0 +1,26 @@
+#!/bin/bash
+
+sed -i \
+-e "s/HAUNATAKUL/HATAHAIRATTANAKOOL/g" \
+-e "s/WALGOWS/WONGSA/g" \
+-e "s/PALTACKO/PHANRIT/g" \
+-e "s/SUKHLO/SUKHA/g" \
+-e "s/NATTHERING/SAMANA/g" \
+-e "s/SUMINE/SUKHA/g" \
+-e "s/THOLENG/THONGLAO/g" \
+-e "s/NUCKARUME/NUTNUM/g" \
+-e "s/SRISOMKU/SUTSOMKIT/g" \
+-e "s/DENGJON/DANGDA/g" \
+-e "s/THOLTAYER/THONKANYA/g" \
+-e "s/RPONGA/RAWANGPA/g" \
+-e "s/KAOZHU/THAMSATCHANAN/g" \
+-e "s/SMARUS/PHUKHOM/g" \
+-e "s/SALSROI/SANGSANOI/g" \
+-e "s/SUMESONG/SURASIANG/g" \
+-e "s/ARUPA/LAHSO/g" \
+-e "s/PEAKON/LANG/g" \
+-e "s/CHIUOCHI/CHOEICHIU/g" \
+-e "s/RAHERIN/VIWATCHAICHOK/g" \
+-e "s/CHINCHUAN/CHAIMAN/g" \
+-e "s/ARKAN/JUJEEN/g" \
+-e "s/TEEORABI/WINOTHAI/g" ~/thailand.csv

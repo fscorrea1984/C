@@ -1,0 +1,3 @@
+break /home/fscorrea/C/2021-04-19/bar.c:36
+break /home/fscorrea/C/2021-04-19/bar.c:50
+

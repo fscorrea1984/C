@@ -1,0 +1,12 @@
+000000000040114c <main>:
+  40114c:       55                      push   %rbp
+  40114d:       48 89 e5                mov    %rsp,%rbp
+  401150:       b8 00 00 20 40          mov    $0x40200000,%eax
+  401155:       89 c7                   mov    %eax,%edi
+  401157:       e8 ba ff ff ff          call   401116 <func>
+  40115c:       b8 00 00 00 00          mov    $0x0,%eax
+  401161:       5d                      pop    %rbp
+  401162:       c3                      ret
+  401163:       66 2e 0f 1f 84 00 00    cs nopw 0x0(%rax,%rax,1)
+  40116a:       00 00 00
+  40116d:       0f 1f 00                nopl   (%rax)

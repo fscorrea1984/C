@@ -1,0 +1,7 @@
+break /home/fscorrea/C/2021/01/25/socket/socket2.c:59
+break /home/fscorrea/C/2021/01/25/socket/socket2.c:62
+break /home/fscorrea/C/2021/01/25/socket/socket2.c:65
+break /home/fscorrea/C/2021/01/25/socket/socket2.c:67
+break /home/fscorrea/C/2021/01/25/socket/socket2.c:25
+break /home/fscorrea/C/2021/01/25/socket/socket2.c:27
+
