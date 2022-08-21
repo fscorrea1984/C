@@ -1,6 +1,6 @@
-all: tsuki.c
-	gcc -g -std=c11 tsuki.c -o tsuki
+all: client.c
+	gcc -g -std=c11 client.c -o client
 
 clean:
-	rm -f tsuki *~
+	rm -f client *~
 	clear

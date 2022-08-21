@@ -1,6 +1,6 @@
-all: cogumelorosa.c
-	gcc -g --std=c11 cogumelorosa.c -o cogumelorosa
+all: gildovigor.c
+	gcc -g --std=c11 gildovigor.c -o gildovigor
 
 clean:
-	rm -rf *~ cogumelorosa.o cogumelorosa
+	rm -rf *~ gildovigor.o gildovigor
 	clear

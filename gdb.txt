@@ -1,9 +1,0 @@
-(gdb) Temporary breakpoint 1 at 0x749: file foo.c, line 5.
-Starting program: /home/fscorrea/C/foo 16
-
-Temporary breakpoint 1, main (argc=2, argv=0x7fffffffdcc8) at foo.c:5
-5	int main(int argc, char **argv) {
-
-Program received signal SIGABRT, Aborted.
-__GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
-51	../sysdeps/unix/sysv/linux/raise.c: No such file or directory.
