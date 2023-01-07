@@ -1,0 +1,18 @@
+https://youtu.be/FlV9P4wuLqg
+
+O resumo é:
+ - nao funcionou com -O0
+ - é preciso investigar exatamente como dois identifiers nao-declarados (1 e nada), um deles inválido (1 viola a restrição de iniciar por uma letra ou _), funcionam no seu caso
+
+Provavelmente, ao alocar nada no fundo da pilha, o que resta é entender como "1" funciona
+"nada" é que é o pointer-to-void-function
+"1[nada]" tem que compilar pra "$rsp-0x1+0x1+0x0". RSP-1 sendo 0-1, 0x1 sendo "1", e 0x0 sendo "nada", e isso tem que acontecer sem o stack smash test
+
+Então estamos usando compiladores diferentes ou sistemas diferentes
+ - GCC 9.4.0
+ - GDB 9.2
+ - Ubuntu 20.04
+
+Also, o manual do GCC deu a entender que sem nada o default é C90
+
+Se estiver no BSD usando LLVM/CLANG, "pior" ainda, mas o resumo do que importa no vídeo é isso
