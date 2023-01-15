@@ -1,0 +1,15 @@
+BIN = stack
+
+OBJ = stack.o
+
+SRC = stack.c
+
+FLAGS = -g -glldb -w -std=c11
+
+CC = clang
+
+all: stack.c
+	$(CC) $(FLAGS) $(SRC) -o $(BIN)
+clean:
+	rm -f $(BIN) $(OBJ) *~
+	clear

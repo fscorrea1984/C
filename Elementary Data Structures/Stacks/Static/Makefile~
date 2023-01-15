@@ -1,14 +1,14 @@
-BIN = bar
+BIN = stack
 
-OBJ = bar.o
+OBJ = stack.o
 
-SRC = bar.c
+SRC = stack.c
 
 FLAGS = -g -w -std=c11
 
-CC = gcc
+CC = clang
 
-all: bar.c
+all: stack.c
 	$(CC) $(FLAGS) $(SRC) -o $(BIN)
 clean:
 	rm -f $(BIN) $(OBJ) *~
