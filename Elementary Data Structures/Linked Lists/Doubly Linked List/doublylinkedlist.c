@@ -3,91 +3,114 @@
 
 typedef struct Node {
   int key;
-  Node *next;  
-  Node *prev;
+  struct Node *next;  
+  struct Node *prev;
 } Node;
 
-void insert(Node *L,int k) {
+void insert(Node **L,int k) {
   Node *aux = (Node *)malloc(sizeof(Node));
   aux->key = k;
-  aux->next = L->next;
-  aux->prev = L;
-  L->next = aux;
+  aux->next = *L;
+  aux->prev = NULL;
+  *L = aux;
 }
 
-void delete(Node *L) {
-  Node *aux = L;
-  L = L->next;
-  L->prev = aux->prev;
-  L->prev->next = L;
-  aux->next = NULL;
-  aux->prev = NULL;
-  free(aux);
+void delete(Node **L,int k) {
+  if(*L == NULL)
+    puts("Empty list");
+  else
+    if((*L)->key == k) {
+      Node *N = *L;
+      *L = N->next;
+      (*L)->prev = NULL;
+      N->next = NULL;
+      free(N);
+    }
+    else {
+      Node *aux;
+      Node *N = *L;
+      while(N != NULL && N->key != k) {
+	aux = N;
+	N = N->next;
+      }
+      if(N == NULL)
+	printf("Key %d not found\n",k);
+      else {
+	aux->next = N->next;
+	if(N->next != NULL)
+	  N->next->prev = aux;
+	N->next = NULL;
+	N->prev = NULL;
+	free(N);
+      }
+    }
 }
 
 Node *search(Node *L,int k) {
-  Node *aux = L;
-  while(aux != NULL) {
-    if(aux->key == k)
-      return(aux);
-    else
-      aux = aux->next;
+  if(L == NULL) {
+    puts("Empty list");
   }
-  return(aux);
+  else {
+    Node *aux = L;
+    while(aux != NULL && aux->key != k) {
+      aux = aux->next;
+    }
+    if(aux == NULL)
+      printf("Key %d was not found in the list\n",k);
+    else
+      if(aux->key == k)
+	printf("Key %d was found in the list\n",k);
+      else
+	printf("Key %d was not found in the list\n",k);
+  }
 }
 
 void printlist(Node *L) {
   if(L == NULL) {
     puts("Empty list");
-    goto END;
   }
-  Node *aux = L;
-  while(aux != NULL) {
-    if(aux->next != NULL)
-      printf("%d, ",aux->key);
-    else
-      printf("%d\n",aux->key);
+  else {
+    Node *aux = L;
+    while(aux != NULL) {
+      if(aux->next != NULL)
+	printf("%d, ",aux->key);
+      else
+	printf("%d\n",aux->key);
+      aux = aux->next;
+    }
   }
- END:
 }
 
 int main(int argc, char **argv) {
 
   /* --- */
 
-  // dynamically allocate first node of list
-  Node *L = (Node *)malloc(sizeof(Node));
-  L->key = 4;
-  L->next = NULL;
-  L->prev = NULL;
+  Node *L;
 
-  insert(L,7);
-  insert(L,13);
+  insert(&L,4);
+  insert(&L,7);
+  insert(&L,13);
+  insert(&L,29);
 
   printlist(L);
 
-  Node *N;
+  search(L,20);
+  search(L,7);
   
-  if((N = search(N,20)) == NULL)
-    puts("Value not found");
-  else
-    delete(N);
-
-  if((N = search(N,7)) == NULL)
-    puts("Value not found");
-  else
-    delete(N);
+  delete(&L,7);
 
   printlist(L);
 
-  // free allocated nodes
+  delete(&L,29);
+
+  printlist(L);
+  
   Node *aux = L;
   while(aux != NULL) {
     Node *N = aux;
     aux = aux->next;
     free(N);
   }
-  */
   
   return 0;
 
