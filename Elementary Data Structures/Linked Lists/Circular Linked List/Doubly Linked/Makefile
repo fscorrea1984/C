@@ -1,10 +1,10 @@
-BIN = foo
+SRC = foo.c
 
 OBJ = foo.o
 
-SRC = foo.c
+BIN = foo
 
-CFLAGS = -g -glldb -w -std=c11
+CFLAGS = -g -glldb -std=c11 -w
 
 FLAGS = -o
 
@@ -13,5 +13,5 @@ CC = clang
 all:
 	$(CC) $(CFLAGS) $(SRC) $(FLAGS) $(BIN)
 clean:
-	rm -rf $(BIN) $(OBJ) *~
+	rm -rf $(OBJ) $(BIN) *~
 	clear
